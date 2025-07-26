@@ -1,0 +1,72 @@
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lavenderblush;
+}
+.container{
+    border:none;
+    border-radius:15px;
+    background-color: thistle;
+    height: auto;      
+    width:25vw;
+    box-shadow: 4px 5px 6px;
+    max-height: 400px;   /* Set your desired fixed height */
+  overflow-y: auto;    /* Enable vertical scroll */
+  padding-right: 10px; /* Optional: for spacing near scrollbar */
+}
+
+
+.header{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.7em;
+    font-weight:900;
+    border-bottom:0.5px solid white;
+    margin-bottom:20px;
+}
+
+.addTask{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+input{
+    padding:7px;
+    border-radius:5px;
+    background-color: lavenderblush;
+    box-shadow: 1px 1px 1px;;
+}
+
+
+
+button:hover{
+    border:1px solid black;
+    box-shadow:4px 4px 4px;
+}
+
+button{
+    background-color: lavenderblush;
+    box-shadow: 1px 1px 1px;
+    border-radius: 5px;
+    padding:4px;
+}
+
+ul{
+    list-style: none;
+    padding: 15px;
+}
+
+li{
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid thistle;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: lavenderblush;
+}
