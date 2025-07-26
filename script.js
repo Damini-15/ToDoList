@@ -1,9 +1,15 @@
 function addTask(){
+const input = document.getElementById('inputTask');
+    const value = input.value.trim();
+    if (value === "") {
+        // Do not add empty task
+        return;
+    }
     const newTask = document.createElement('li');
     const taskList = document.getElementById('taskList');
+    newTask.textContent = value;
     taskList.appendChild(newTask);
-    newTask.textContent = document.getElementById('inputTask').value
-    document.getElementById('inputTask').value=""
+    input.value = "";
     deleteTask(newTask);
 }
 
